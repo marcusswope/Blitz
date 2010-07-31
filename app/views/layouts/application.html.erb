@@ -6,29 +6,32 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Blitz</title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag 'jquery-1.4.2.min' %>
 </head>
 <body>
 <div id="headerContainer">
 	<div id="headerLeft">
-		Project Image
+		<%= image_tag 'mainLogo.png' %>
 	</div>
 	<div id="headerRight">
-		Logged in User
+		<b>Marcus Swope</b> | <a href="#">Logout</a>
 	</div>
 </div>
-<div style="clear:both;"/>
+<br />
 <div id="menu">
-	<div class="menuItem">
-		Item 1
-	</div>
-	<div class="menuItem">
-		Item 2
-	</div>
-	<div class="menuItem">
-		Item 3
-	</div>
+      <div class="firstMenuItem menuItem">
+        <a href="#">Projects</a>
+      </div>
+      <div class="menuItem">
+        <a href="#">Settings</a>
+      </div>
+      <div class="menuItem">
+        <a href="#">Log Out</a>
+      </div>
+      <div class="menuItem">
+        <a href="#">Other Things</a>
+      </div>
 </div>
-
 
 
 <p style="color: green"><%= notice %></p>
