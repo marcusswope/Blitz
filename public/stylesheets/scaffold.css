@@ -3,7 +3,9 @@
 	padding: 0;
 }
 
-body { color: #333; }
+body {
+    background-color:#F1F1F1;
+}
 
 #headerContainer{
 	padding-top: 20px;
@@ -36,11 +38,12 @@ body { color: #333; }
 
 #menu{
 	width: 97%;
-    background: #dddddd;
     height: 40px;
-    border-radius:15px;
+    border-radius:8px;
     border: 2px solid #afc8e6;
     margin: 0px 15px 15px;
+    background: -webkit-gradient(linear,
+                left top, right top, from(#fcfcfc), to(#dddddd));
 }
 
 .menuItem
@@ -68,11 +71,28 @@ a:hover
     background: none;
 }
 
-#headerContainer{
-/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */
-    /* fallback (Opera) */
+#mainBody{    
+    margin: 0px 15px 15px;
+}
 
-  }
+.project
+{
+    border-radius:25px;
+    border: 2px solid #afc8e6;    
+    margin: 0px 15px 15px;
+    padding: 15px;
+    float:left;
+    font-family:sans-serif;
+     background: #008800;
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #fcfcfc, #dddddd);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#fcfcfc), to(#dddddd));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#fcfcfc', EndColorStr='#dddddd', GradientType=0);
+}
 
 /*
 body, p, ol, ul, td {

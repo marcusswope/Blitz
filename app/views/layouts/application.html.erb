@@ -11,7 +11,7 @@
 <body>
 <div id="headerContainer">
 	<div id="headerLeft">
-		<%= image_tag 'mainLogo.png' %>
+		<%= link_to image_tag ('mainLogo.png'), projects_path  %>
 	</div>
 	<div id="headerRight">
 		<b>Marcus Swope</b> | <a href="#">Logout</a>
@@ -20,7 +20,7 @@
 <br />
 <div id="menu">
       <div class="firstMenuItem menuItem">
-        <a href="#">Projects</a>
+        <%= link_to 'Projects', projects_path %>
       </div>
       <div class="menuItem">
         <a href="#">Settings</a>
@@ -33,10 +33,9 @@
       </div>
 </div>
 
-
-<p style="color: green"><%= notice %></p>
-
-<%= yield %>
+<div id="mainBody">
+    <%= yield %>
+</div>
 
 </body>
 </html>
