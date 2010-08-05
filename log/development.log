@@ -7031,3 +7031,10 @@ Processing ProjectsController#index (for 127.0.0.1 at 2010-08-01 18:50:32) [GET]
 Rendering template within layouts/application
 Rendering projects/index
 Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-08-04 19:08:48) [GET]
+  [4;36;1mProject Load (2.0ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 4650ms (View: 4642, DB: 2) | 200 OK [http://localhost/projects]
