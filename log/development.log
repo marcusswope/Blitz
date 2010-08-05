@@ -7428,3 +7428,17 @@ Processing ProjectsController#index (for 127.0.0.1 at 2010-08-04 19:10:15) [GET]
 Rendering template within layouts/application
 Rendering projects/index
 Completed in 34ms (View: 25, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-08-04 19:13:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 35ms (View: 13, DB: 1) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2010-08-04 19:14:07) [GET]
+Rendering template within layouts/application
+Rendering projects/new
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://localhost/projects/new]
