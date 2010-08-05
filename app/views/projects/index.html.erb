@@ -6,7 +6,7 @@
         <%= link_to image_tag('trash.png'), project, :confirm => 'Are you sure?', :method => :delete %>
     </h3>
     <br />
-    <span>Information about the project</span>
+    <span><%=project.description%></span>
   </div>
 <% end %>
 <br />
