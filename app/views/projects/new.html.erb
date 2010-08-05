@@ -8,6 +8,14 @@
     <%= f.text_field :name %>
   </p>
   <p>
+    <%= f.label :description%><br />
+    <%= f.text_field :description%><br />
+  </p>
+  <p>
+    <%= f.label :archived%><br />
+    <%= f.check_box :archived%><br />
+  </p>
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
