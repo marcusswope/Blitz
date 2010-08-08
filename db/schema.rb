@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20100807192710) do
     t.string   "creator"
     t.datetime "created_date"
     t.datetime "started"
-    t.datetime "finsished"
+    t.datetime "finished"
     t.string   "tags"
     t.boolean  "ready"
     t.boolean  "blocked"
