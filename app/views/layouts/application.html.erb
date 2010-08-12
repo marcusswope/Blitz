@@ -11,27 +11,12 @@
 <body>
 <div id="headerContainer">
 	<div id="headerLeft">
-		<%= link_to image_tag ('mainLogo.png'), projects_path  %>
+		 Blitz Image Here
 	</div>
 	<div id="headerRight">
-		<b>Marcus Swope</b> | <a href="#">Logout</a>
+		Put Logged in user here
 	</div>
 </div>
-<div id="menu">
-      <div class="firstMenuItem menuItem">
-        <%= link_to 'Projects', projects_path %>
-      </div>
-      <div class="menuItem">
-        <a href="#">Settings</a>
-      </div>
-      <div class="menuItem">
-        <a href="#">Log Out</a>
-      </div>
-      <div class="menuItem">
-        <a href="#">Other Things</a>
-      </div>
-</div>
-<br />
 <div id="mainBody">
     <%= yield %>
 </div>
