@@ -50,8 +50,17 @@ body {
     padding: 10px;
     font-family:sans-serif;
     color: #fff;
-    background: url("../images/menuSeparator.png") no-repeat left;
 }
+
+.menuAction
+{
+    vertical-align:middle;
+    float:right;
+    padding: 10px;
+    font-family:sans-serif;
+    color: #fff;
+}
+
 
 a
 {
