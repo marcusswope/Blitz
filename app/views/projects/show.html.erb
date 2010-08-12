@@ -24,12 +24,16 @@
         <th>Complete</th>
     </tr>
     <tr>
-        <td width='33%'></td>
+        <td width='33%'>
+        <% @project.story.each do |p| %><p><%= p.title %><p><% end %>
+        </td>
+        <td width='33%'>
+        <% @project.story.each do |p| %><p><%= p.title %><p><% end %>
+        </td>
 
-      
-        <td width='33%'></td>
-
-        <td width='33%'></td>
+        <td width='33%'>
+        <% @project.story.each do |p| %><p><%= p.title %><p><% end %>
+        </td>
 
     </tr>
   </table>
